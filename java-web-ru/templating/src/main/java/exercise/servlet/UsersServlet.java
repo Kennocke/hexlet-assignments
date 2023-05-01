@@ -136,9 +136,7 @@ public class UsersServlet extends HttpServlet {
             return;
         }
         // BEGIN
-        users = users.stream()
-                .filter(person -> !person.equals(user))
-                .collect(Collectors.toList());
+        users.remove(user);
         response.sendRedirect("/users");
         // END
 
