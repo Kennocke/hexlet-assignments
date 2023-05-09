@@ -1,0 +1,4 @@
+2023-05-09 22:17:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT ID, TITLE, BODY FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"
+Syntax error in SQL statement "SELECT ID, TITLE, BODY FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"; SQL statement:
+SELECT id, title, body FROM articles LIMIT 10 OFFSET ? ORDER BY id [42000-200]
