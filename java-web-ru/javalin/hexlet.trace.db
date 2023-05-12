@@ -1,0 +1,8 @@
+2023-05-13 00:16:11 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "ARTICLE" не найдена
+Table "ARTICLE" not found; SQL statement:
+alter table article drop constraint if exists fk_article_category_id [42102-200]
+2023-05-13 00:24:17 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLDataException: Ошибка преобразования данных при конвертации "'Pets' (ARTICLE: ""CATEGORY_ID"" BIGINT NOT NULL)"
+Data conversion error converting "'Pets' (ARTICLE: ""CATEGORY_ID"" BIGINT NOT NULL)"; SQL statement:
+update article set title=?, body=?, category_id=? where id = ? [22018-200]
